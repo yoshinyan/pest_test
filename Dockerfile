@@ -7,3 +7,5 @@ RUN apt-get update -y && \
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 COPY composer.json .
 COPY composer.lock .
+
+RUN composer install
