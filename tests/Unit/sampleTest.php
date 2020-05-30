@@ -65,9 +65,9 @@ test('特定の文字列を含むか', function () {
 });
 
 test('throws exception', function () {
-    throw new Exception('Something happened.');
+    throw new Exception('なにかがおこった');
 })->throws(Exception::class);
 
 test('throws exception with message', function () {
-    throw new Exception('Something happened.');
-})->throws(Exception::class, 'Something happened.');
+    throw new Exception('なにかがおこった');
+})->throws(Exception::class, 'なにかがおこった');
